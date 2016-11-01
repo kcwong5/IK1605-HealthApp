@@ -143,7 +143,7 @@ class ExerciseViewController: UIViewController,ChartViewDelegate {
         stepBarChartView.rightAxis.addLimitLine(ll)
         stepBarChartView.leftAxis.addLimitLine(ll)
         for i in 0..<values.count {
-            let dataEntry = BarChartDataEntry(x: Double(days[i]), y: Double(values[i]))
+            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(values[i]))
             dataEntries.append(dataEntry)
         }
         
